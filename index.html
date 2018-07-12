@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Onpoint-test</title>
+	<link rel="stylesheet" href="public/css/style.css">
+	<link rel="stylesheet" href="public/css/normalize.css">
+</head>
+<body>
+	<!-- Control buttons-->
+	<div class="container">
+			<nav class="slider-controls">	
+					<a href="#slide1" class="slider-controls__btn active"></a>
+					<a href="#slide2" class="slider-controls__btn"></a>
+					<a href="#slide3" class="slider-controls__btn"></a>
+			</nav>
+			<div class="scroll-bottom" id="scroll-bottom">
+					<button class="scroll-bottom__btn">Листайте вниз
+					</button>
+			</div>
+			<div class="slidecontainer" id="slidecontainer">
+				<input type="range" min="1" max="100" value="1" class="slider" id="userRange">
+				<div class="slidecontainer-items">	
+					<div class="slidecontainer__desc">1988</div>
+					<div class="slidecontainer__desc">2009</div>
+					<div class="slidecontainer__desc">2016</div>
+				</div>
+			</div>
+			<main id="move-container">	
+				<section class="slide-1 active" id="slide1">
+					 <div class="slide-1-pulse point1">
+						<span class="slide-1-caption caption-1">Гипогликемия</span>
+					 </div>
+					 <div class="slide-1-pulse point2">
+						<span class="slide-1-caption caption-2">Осложнения СД</span>
+					 </div>
+					 <div class="slide-1-pulse point3">
+						<span class="slide-1-caption caption-3">Цель по HbA1c</span>
+					 </div>
+					 <div class="slide-1-pulse point4">
+						<span class="slide-1-caption caption-4">СС риски</span>
+					 </div>
+					<h1 class="slide-1__header">
+						Всегда ли цели терапии СД2 на поверхности?
+					</h1>			
+				</section>	
+				<section class="slide-2" id="slide2">
+					<h2>Основа терапии — патогенез СД2</h2>
+				</section>
+				<section class="slide-x">
+					<div id="slider-container">
+					 <section class="slide-3 focus" id="slide3">
+						<h3>Звенья патогенеза СД2</h3>
+						<img class="slide-3-1__img" src="src/img/slide3-1.png" alt="">
+					</section>
+					<section class="slide-4" id="slide4">
+						<h3>Смертельный октет</h3>
+						<img class="slide-3-2__img" src="src/img/slide3-2.png" alt="">
+					</section>
+					<section class="slide-5" id="slide5">
+						<h3>Звенья патогенеза СД2</h3>
+						<img class="slide-3-3__img" src="src/img/slide3-3.png" alt="">
+					</section>
+				</div>
+			</section>
+	</main>
+</div>
+<script src="src/js/user.js"></script>
+</body>
+</html>
